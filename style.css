@@ -1,3 +1,8 @@
+:root {
+  --iPhone13ProSectionColor: #fbfbfd;
+  --iPhone13SectionColor: #35283c;
+  --macbookSectionColor: #fbfbfd;
+}
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +19,7 @@ body {
   background-color: #fff;
   color: #1d1d1f;
   font-style: normal;
+  overflow: visible;
 }
 .navbar {
   right: 0;
@@ -41,7 +47,6 @@ body {
   height: 44px;
   list-style: none;
   width: auto;
-  /* box-sizing: content-box; */
 }
 .item {
   display: inline-block;
@@ -97,7 +102,6 @@ a:hover {
   letter-spacing: -0.022em;
   padding: 12px 0;
   padding-top: 50px;
-  
 }
 .link-ribon {
   color: #06c;
@@ -106,4 +110,135 @@ a:hover {
 .link-ribon:hover {
   text-decoration: underline;
 }
-/* ----------------------------------------------------- */
+/*-------------- Section One Start -------------- */
+.secOneContent {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 12px;
+  border-bottom: 12px solid #fff;
+}
+/*-------------- End iPhone13 Pro -------------- */
+.iPhone13Pro {
+  position: relative;
+  height: 650px;
+  padding-top: 44px;
+  box-sizing: content-box;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  color: #1d1d1f;
+  text-align: center;
+}
+.headline {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 600;
+}
+.subhead {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.cta-link a {
+  text-decoration: none;
+  margin-top: 0.74em;
+  font-size: 19px;
+  font-weight: 400;
+  color: #06c;
+}
+#linkLearnmore {
+  margin-left: -1px;
+}
+#linkBuy {
+  margin-left: 32px;
+}
+.cta-link a:hover {
+  text-decoration: underline;
+}
+.iPhone13ProImage {
+  z-index: 1;
+  overflow: visible;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+.unitImage-iPhone13ProImage {
+  width: 100%;
+  height: 736px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./image/2-3010px.jpg);
+  background-position: center -200px;
+}
+
+/*-------------- End iPhone13 Pro -------------- */
+
+/*-------------- Start iPhone13 -------------- */
+
+.iPhone13 {
+  height: 694px;
+  width: 100%;
+  background-color: var(--iPhone13SectionColor);
+  padding-top: 61px;
+}
+#headline-iPhone13 {
+  color: #fff;
+}
+#subhead-iPhone13 {
+  color: #fec2eb;
+  margin-top: 5px;
+}
+#cta-link-iPhone13 a {
+  color: #2997ff;
+}
+.unitImage-iPhone13Image {
+  width: 100%;
+  height: 736px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./image/4-3008px.jpg);
+  background-position: center -200px;
+}
+
+/*-------------- End iPhone13 -------------- */
+
+
+/*-------------- Start MacBook -------------- */
+
+.macbook {
+  height: 694px;
+  width: 100%;
+}
+#macbook {
+  padding-top: 55px;
+}
+#headline-macbook {
+  font-size: 56px;
+}
+#subhead-macbook {
+  font-size: 28px;
+}
+.unitImage-macbookImage {
+  width: 100%;
+  height: 736px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./image/macbook.jpg);
+  background-position: center -200px;
+}
+/*-------------- End MacBook -------------- */
+
+/*-------------- Section One End -------------- */
+
+/*-------------- Section two Start -------------- */
+
+
+
+
+/*-------------- Section Two End -------------- */
+
