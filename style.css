@@ -56,7 +56,8 @@ body {
   line-height: 3.14286;
   font-weight: 400;
   letter-spacing: -0.01em;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-weight: normal;
   color: #f5f5f7;
   display: inline-block;
   padding: 0 12px;
@@ -90,7 +91,7 @@ a:hover {
   transition: opacity 0.3s;
 }
 .shop {
-  font-weight: 500;
+  font-weight: normal;
   background-color: #f5f5f7;
   height: 88px;
   text-align: center;
@@ -102,6 +103,8 @@ a:hover {
   letter-spacing: -0.022em;
   padding: 12px 0;
   padding-top: 50px;
+
+  font-weight: normal;
 }
 .link-ribon {
   color: #06c;
@@ -129,6 +132,7 @@ a:hover {
   flex-direction: column;
   color: #1d1d1f;
   text-align: center;
+  font-weight: normal;
 }
 .headline {
   font-size: 48px;
@@ -142,10 +146,13 @@ a:hover {
 }
 .cta-link a {
   text-decoration: none;
-  margin-top: 0.74em;
   font-size: 19px;
   font-weight: 400;
   color: #06c;
+}
+.cta-link {
+  padding-top: 20px;
+  box-sizing: content-box;
 }
 #linkLearnmore {
   margin-left: -1px;
@@ -206,7 +213,6 @@ a:hover {
 
 /*-------------- End iPhone13 -------------- */
 
-
 /*-------------- Start MacBook -------------- */
 
 .macbook {
@@ -236,9 +242,160 @@ a:hover {
 /*-------------- Section One End -------------- */
 
 /*-------------- Section two Start -------------- */
+#sec2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 12px;
+  height: 1908px;
+  width: 100%;
+  border-bottom: 12px solid #fff;
+  padding: 0 12px;
+  overflow: hidden;
+  margin-top: 16px;
+}
 
+/*-------------- Start homepod -------------- */
+.homepod {
+  background-image: url(./image/homepod.jpg);
+  background-color: #fbfbfd;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 624px;
+  text-align: center;
+  cursor: pointer;
+}
+.homepod-heading {
+  margin-top: 53px;
+  font-size: 40px;
+  font-weight: 600;
+}
+#headline-homepod {
+  font-size: 40px;
+}
+/*-------------- End homepod -------------- */
+/*-------------- Start airpod -------------- */
+.airpod {
+  background-image: url(./image/airpod.jpg);
+  background-color: #fbfbfd;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 624px;
+  text-align: center;
+  cursor: pointer;
+}
+.airpod-heading {
+  position: relative;
+  margin-top: 430px;
+  font-size: 40px;
+  font-weight: 600;
+}
+#headline-airpod {
+  font-size: 40px;
+}
+#subhead-airpod{
+  font-size: 21px;
+}
 
+/*-------------- End airpod -------------- */
+/*-------------- Start watch -------------- */
+.watch {
+  background-image: url(./image/watch1.jpg);
+  background-color: #fbfbfd;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 624px;
+  text-align: center;
+  cursor: pointer;
+}
+.watch-heading {
+  position: relative;
+  font-weight: 400;
+}
+#headline-watch {
+  font-size: 21px;
+}
 
+#watchlogo{
+  margin-top: 48px;
+}
+/*-------------- End watch -------------- */
+/*-------------- Start arcade -------------- */
+.arcade {
+  background-image: url(./image/arcade.jpg);
+  background-color: #fbfbfd;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 624px;
+  text-align: center;
+  cursor: pointer;
+}
+.arcade-heading {
+  position: relative;
+  font-weight: 400;
+}
+#headline-arcade {
+  font-size: 21px;
+}
+
+#arcadelogo{
+  margin-top: 48px;
+}
+
+/*-------------- End arcade -------------- */
+/*-------------- Start card -------------- */
+.card {
+  background-image: url(./image/card.jpg);
+  background-color: #fbfbfd;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 624px;
+  text-align: center;
+  cursor: pointer;
+}
+.card-heading {
+  position: relative;
+  font-weight: 400;
+}
+#headline-card {
+  font-size: 21px;
+}
+
+#cardlogo{
+  margin-top: 48px;
+}
+
+/*-------------- End card -------------- */
+/*-------------- Start tv -------------- */
+.tv {
+    background-image: url(./image/tv.jpg);
+    background-color: #fbfbfd;
+    background-repeat: no-repeat;
+    height: 624px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .tv-heading {
+    position: relative;
+    color: #fff;
+   font-weight: 400;
+  }
+  #subhead-tv{
+    text-align: center;
+  }
+  
+  #tvlogo{
+    margin-top: 300px;
+    display:block;
+    text-align: center;
+    left: auto;
+    right: auto;
+    padding-left:420px;
+  }
+  #tv1logo{
+    display: inline-block;
+  }
+
+/*-------------- End tv -------------- */
 
 /*-------------- Section Two End -------------- */
-
