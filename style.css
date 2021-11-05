@@ -2,6 +2,9 @@
   --iPhone13ProSectionColor: #fbfbfd;
   --iPhone13SectionColor: #35283c;
   --macbookSectionColor: #fbfbfd;
+  --footer-background: #f5f5f7;
+  --footer-link-color: #424245;
+  --footer-border-color: #d2d2d7;
 }
 * {
   padding: 0;
@@ -117,7 +120,7 @@ a:hover {
 .secOneContent {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 12px;
+  grid-gap: 22px;
   border-bottom: 12px solid #fff;
 }
 /*-------------- End iPhone13 Pro -------------- */
@@ -126,6 +129,7 @@ a:hover {
   height: 650px;
   padding-top: 44px;
   box-sizing: content-box;
+  border-bottom: 12px solid #fff;
 }
 .heading {
   display: flex;
@@ -293,7 +297,7 @@ a:hover {
 #headline-airpod {
   font-size: 40px;
 }
-#subhead-airpod{
+#subhead-airpod {
   font-size: 21px;
 }
 
@@ -316,7 +320,7 @@ a:hover {
   font-size: 21px;
 }
 
-#watchlogo{
+#watchlogo {
   margin-top: 48px;
 }
 /*-------------- End watch -------------- */
@@ -338,7 +342,7 @@ a:hover {
   font-size: 21px;
 }
 
-#arcadelogo{
+#arcadelogo {
   margin-top: 48px;
 }
 
@@ -361,41 +365,146 @@ a:hover {
   font-size: 21px;
 }
 
-#cardlogo{
+#cardlogo {
   margin-top: 48px;
 }
 
 /*-------------- End card -------------- */
 /*-------------- Start tv -------------- */
 .tv {
-    background-image: url(./image/tv.jpg);
-    background-color: #fbfbfd;
-    background-repeat: no-repeat;
-    height: 624px;
-    text-align: center;
-    cursor: pointer;
-  }
-  .tv-heading {
-    position: relative;
-    color: #fff;
-   font-weight: 400;
-  }
-  #subhead-tv{
-    text-align: center;
-  }
-  
-  #tvlogo{
-    margin-top: 300px;
-    display:block;
-    text-align: center;
-    left: auto;
-    right: auto;
-    padding-left:420px;
-  }
-  #tv1logo{
-    display: inline-block;
-  }
+  background-image: url(./image/tv.jpg);
+  background-color: #fbfbfd;
+  background-repeat: no-repeat;
+  height: 624px;
+  text-align: center;
+  cursor: pointer;
+}
+.tv-heading {
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+}
+#subhead-tv {
+  text-align: center;
+}
+
+#tvlogo {
+  margin-top: 300px;
+  display: block;
+  text-align: center;
+  left: auto;
+  right: auto;
+  padding-left: 420px;
+}
+#tv1logo {
+  display: inline-block;
+}
 
 /*-------------- End tv -------------- */
 
 /*-------------- Section Two End -------------- */
+
+/*---------------- Section Footer Start --------------- */
+#globalfooter {
+  background-color: var(--footer-background);
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6e6e73;
+}
+.footerContent {
+  max-width: 980px;
+  height: 778px;
+  margin: 0 auto;
+  padding: 0 22px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+}
+.footnotes {
+  border-bottom: 1px solid var(--footer-border-color);
+  padding: 17px 0 11px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 0.8em;
+}
+ul a {
+  text-decoration: none;
+  color: var(--footer-link-color);
+}
+ul a:hover {
+  text-decoration: underline;
+}
+/*-------------- Nav Footer Start-------------- */
+.navFooter {
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+}
+.nav-footer-column {
+  flex-basis: 25%;
+  height: 414px;
+}
+ul {
+  margin-top: 0.8em;
+  letter-spacing: 0.01em;
+}
+li a {
+  color: var(--footer-link-color);
+}
+.headline-nav-footer {
+  color: #1d1d1f;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.headline-nav-footer1 {
+  color: #1d1d1f;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.endFooter {
+  padding-top: 34px;
+}
+.footer-shop {
+  margin-bottom: 7px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--footer-border-color);
+}
+.footer-locale {
+  float: right;
+  text-decoration: none;
+  color: var(--footer-link-color);
+  display: inline;
+}
+.footer-locale a:hover {
+  text-decoration: underline;
+}
+.legal-copyright {
+  display: inline;
+  max-height: 9999px;
+  margin-right: 30px;
+}
+.legal-links {
+  position: relative;
+  display: inline-block;
+  border-right: 1px solid var(--footer-border-color);
+  margin-right: 7px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: var(--footer-link-color);
+}
+#sitmap {
+  border: none;
+}
+.legal-links a:hover{
+text-decoration: underline;
+}
+/*-------------- Nav Footer End-------------- */
+
+/*---------------- Section Footer End --------------- */
