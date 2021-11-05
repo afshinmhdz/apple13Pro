@@ -130,6 +130,7 @@ a:hover {
   padding-top: 44px;
   box-sizing: content-box;
   border-bottom: 12px solid #fff;
+  cursor: pointer;
 }
 .heading {
   display: flex;
@@ -194,6 +195,7 @@ a:hover {
   width: 100%;
   background-color: var(--iPhone13SectionColor);
   padding-top: 61px;
+  cursor: pointer;
 }
 #headline-iPhone13 {
   color: #fff;
@@ -222,6 +224,7 @@ a:hover {
 .macbook {
   height: 694px;
   width: 100%;
+  cursor: pointer;
 }
 #macbook {
   padding-top: 55px;
@@ -240,6 +243,7 @@ a:hover {
   background-repeat: no-repeat;
   background-image: url(./image/macbook.jpg);
   background-position: center -200px;
+
 }
 /*-------------- End MacBook -------------- */
 
